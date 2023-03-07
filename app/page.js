@@ -8,15 +8,18 @@ export default async function Home() {
   return (
     <main>
       <h1 className="">Hello Nextjs</h1>
-      {response.results.map((movie) => (
-        <Movie
-          key={movie.id}
-          id={movie.id}
-          title={movie.title}
-          poster_path={movie.poster_path}
-          release_date={movie.release_date}
-        />
-      ))}
+      <div className="grid gap-16 grid-cols-fluid">
+        {" "}
+        {response.results.map((movie) => (
+          <Movie
+            key={movie.id}
+            id={movie.id}
+            title={movie.title}
+            poster_path={movie.poster_path}
+            release_date={movie.release_date}
+          />
+        ))}
+      </div>
     </main>
   );
 }
