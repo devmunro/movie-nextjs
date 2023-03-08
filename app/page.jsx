@@ -6,8 +6,8 @@ export default async function Home() {
   const response = await data.json();
   return (
     <main>
-      <h1 className="">Hello Nextjs</h1>
-      <div className="grid gap-16 grid-cols-fluid">
+    
+      <div className="grid md:gap-16 md:grid-cols-fluid grid-cols-2 gap-4">
         
         {response.results.map((movie) => (
           <MovieDatabase

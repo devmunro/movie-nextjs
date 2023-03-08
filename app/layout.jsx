@@ -1,5 +1,6 @@
 import './globals.css'
 import {Montserrat} from "@next/font/google"
+import Link from 'next/link'
 
 const monstserrat = Montserrat({
 weight: ['400', '700'],
@@ -15,7 +16,9 @@ export const metadata = {
 export default function RootLayout({ children }) {
   return (
     <html lang="en">
-      <body className={`bg-black text-white ${monstserrat.className} mx-4 md:mx-32 my-12` }>{children}</body>
+      <body className={`bg-black text-white ${monstserrat.className} mx-4 md:mx-32 my-8 md:text-md text-xs` }>
+        <nav className='mb-8'> <Link className=' hover:bg-white p-4 hover:text-black' href="/">Home</Link></nav>
+        {children}</body>
     </html>
   )
 }
