@@ -12,7 +12,7 @@ export default async function MovieDatabase({
   return (
     <div className="">
      
-      <Link href={`${section}/${id}`}>
+      <Link href={`/${section}/${id}`}>
         <div className="p-4 bg-slate-600 rounded-t-lg h-20">
           <h1 className="font-bold">{title}</h1>
           <h2>{release_date} </h2>
