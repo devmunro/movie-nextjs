@@ -10,7 +10,8 @@ export default async function MovieDatabase({
   const imagePath = "https://image.tmdb.org/t/p/original";
   return (
     <div className="">
-      <Link href={`/${id}`}>
+     
+      <Link href={`${id}`}>
         <div className="p-4 bg-slate-600 rounded-t-lg h-20">
           <h1 className="font-bold">{title}</h1>
           <h2>{release_date} </h2>

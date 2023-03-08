@@ -1,13 +1,17 @@
-import MovieDatabase from "./MovieDatabase";
+import Image from "next/image";
+import MovieDatabase from "../MovieDatabase";
 
-export default async function Home() {
-  const api = "https://api.themoviedb.org/3/movie/popular";
-  const data = await fetch(`${api}?api_key=${process.env.API_KEY}`);
+export default async function ComingSoon() {
+  const api = `https://api.themoviedb.org/3/movie/upcoming?api_key=${process.env.API_KEY}`;
+
+  const imagePath = "https://image.tmdb.org/t/p/original";
+  const data = await fetch(api);
   const response = await data.json();
+
   return (
-    <main>
-      <h2 className="font-bold py-4 text-xl">Popular:</h2>
-     
+    <div>
+      <h2 className="font-bold py-4 text-xl">Coming Soon:</h2>
+
       <div className="grid lg:gap-16 lg:grid-cols-fluid grid-cols-2 gap-4 ">
         {response.results.map((movie) => (
           <MovieDatabase
@@ -19,6 +23,6 @@ export default async function Home() {
           />
         ))}
       </div>
-    </main>
+    </div>
   );
 }

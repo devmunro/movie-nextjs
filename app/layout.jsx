@@ -27,6 +27,11 @@ export default function RootLayout({ children }) {
                 Home
               </Link>
             </li>
+            <li className="mr-8">
+              <Link className="hover:bg-white p-2 rounded-md hover:text-black flex items-center" href="/comingsoon">
+                Coming Soon
+              </Link>
+            </li>
            
           </ul>
         </nav>
