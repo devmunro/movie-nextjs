@@ -21,7 +21,7 @@ console.log(params)
       </h2>
       <div className="flex flex-wrap">
       <Image
-        className="my-12 w-1/4"
+        className="my-12 w-full"
         src={imagePath + response.backdrop_path}
         alt={response.title}
         width={1000}
@@ -29,8 +29,8 @@ console.log(params)
         priority
       />
     </div>
-    <div className="my-4 w-1/2">
-      <p className="text-lg">{response.overview}</p>
+    <div className="my-4 w-full">
+      <p className="text-md">{response.overview}</p>
     </div>
     </div>
   </div>

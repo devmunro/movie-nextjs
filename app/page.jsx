@@ -7,7 +7,7 @@ export default async function Home() {
   return (
     <main>
     
-      <div className="grid md:gap-16 md:grid-cols-fluid grid-cols-2 gap-4">
+      <div className="grid md:gap-16 md:grid-cols-fluid grid-cols-2 gap-4 ">
         
         {response.results.map((movie) => (
           <MovieDatabase
