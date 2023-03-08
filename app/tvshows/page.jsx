@@ -10,7 +10,7 @@ export default async function ComingSoon() {
 
   return (
     <div>
-      <h2 className="font-bold py-4 text-xl">Popular TV Shows</h2>
+      <h2 className="font-bold py-4 text-xl">Popular TV Shows:</h2>
 
       <div className="grid lg:gap-16 lg:grid-cols-fluid grid-cols-2 gap-4 ">
         {response.results.map((tv) => (

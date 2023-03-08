@@ -9,7 +9,6 @@ export default async function movie({ params }) {
   console.log(api);
   const response = await data.json();
 
-    // define an array of colors
   
   return (
     <div>

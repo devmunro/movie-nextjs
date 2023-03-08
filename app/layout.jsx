@@ -23,18 +23,18 @@ export default function RootLayout({ children }) {
           {" "}
           <ul className="flex items-center">
             <li className="mr-8">
-              <Link className="hover:bg-white p-2 rounded-md hover:text-black flex items-center" href="/">
+              <Link className="  active:bg-indigo-900 focus:bg-indigo-900 hover:bg-white p-2 rounded-md hover:text-black flex items-center" href="/">
                 Home
               </Link>
             </li>
             <li className="mr-8">
-              <Link className="hover:bg-white p-2 rounded-md hover:text-black flex items-center" href="/comingsoon">
+              <Link className="hover:bg-white active:bg-indigo-900 focus:bg-indigo-900 p-2 rounded-md hover:text-black flex items-center" href="/comingsoon">
                 Coming Soon
               </Link>
             </li>
             <li className="mr-8">
-              <Link className="hover:bg-white p-2 rounded-md hover:text-black flex items-center" href="/tvshows">
-                Tv Shows
+              <Link className="hover:bg-white  active:bg-indigo-900 focus:bg-indigo-900 p-2 rounded-md hover:text-black flex items-center" href="/tvshows">
+                TV Shows
               </Link>
             </li>
            
