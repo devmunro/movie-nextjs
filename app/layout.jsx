@@ -32,6 +32,11 @@ export default function RootLayout({ children }) {
                 Coming Soon
               </Link>
             </li>
+            <li className="mr-8">
+              <Link className="hover:bg-white p-2 rounded-md hover:text-black flex items-center" href="/tvshows">
+                Tv Shows
+              </Link>
+            </li>
            
           </ul>
         </nav>
